@@ -1,0 +1,37 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# --- Virtual environments ---
+env/
+venv/
+.venv/
+
+# --- Editors / OS ---
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# --- Trained weights ---
+# Intermediate and superseded checkpoints are not published, and
+# policy_only.pth is regenerated from modele_final.pth on the first
+# evaluation run. Only modele_final.pth is tracked (see the README).
+*.pth
+!Pacman_Complete/IA_4_fantomes/modele_final.pth
+
+# --- Generated during training and evaluation ---
+# The committed logs are the ones behind the published figures; anything a new
+# run produces stays local.
+Pacman_Complete/IA_*_fantomes/json_log/lr_log_*.json
+Pacman_Complete/IA_*_fantomes/json_log/loss_log_*.json
+game_state.json
+
+# --- Course material (contains other people's names) ---
+*.pdf

@@ -1,0 +1,14 @@
+# Runtime dependencies of the game and the agent.
+# Versions are the ones the published results were produced with.
+
+# Game
+pygame==2.6.1
+
+# Agent
+torch==2.7.0
+numpy==2.2.4
+gym==0.26.2
+
+# Plotting the training logs (agent/plot_metrics.py)
+matplotlib==3.10.3
+pandas==2.2.3
